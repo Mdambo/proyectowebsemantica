@@ -1,0 +1,92 @@
+<!--
+
+Nombre:
+Miguel Damborenea Terreros
+   
+Fecha: 
+29/11/2023
+
+Nombre del fichero: 
+index.html
+   
+UD: 
+Lenguaje de marcas y sistemas de gestión de la información 02 (DAM)
+   
+Tarea: 
+Tarea Evaluación 02: Sitio Web.
+   
+Descripción: 
+El objetivo de esta tarea es desarrollar el sitio web diseñado en la primera tarea de evaluación.
+El sitio tendrá al menos 5 páginas Web y deberá contar con las siguientes funcionalidades:
+* Presentación del sitio
+* Zona de navegación principal que permita el acceso a distintos contenidos.
+* Páginas de contenidos con las siguientes particularidades:
+  - Listado de noticias relacionadas con el tema elegido, que contenga enlaces de "seguir leyendo" y enlace con una página externa.
+  - Listado de reseñas de libros con link a información detallada.
+  - Información detallada de al menos un libro.
+* Esta página de información detallada deberá estar creada por nosotros mismos y deberá incorporar algún elemento multimedia 
+  como imagen, vídeo, etc.
+* Formulario para contactar y enviar comentarios por correo.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página inicial de página reseñas de libros">
+    <meta name="keywords" content="Inicio, Libros, Reseñas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Ratón de Biblioteca</title>
+    <!--Estilos de css-->
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  
+<body>
+
+  <!--Cabecera de la página, incluidos logos y nombre-->
+  <header>
+    <img class="imagenlogo1" src="Multimedia/libro.svg" alt="logo libro" >
+    <img class="imagenlogo2" src="Multimedia/ratonlogo.webp" alt="logo ratón" >
+    <b>Ratón de <br>Biblioteca</b><br><p>El lugar para los amantes de la literatura</p>
+  </header>
+
+  <!--Barra de navegación superior-->
+  <nav id="seccionnavegacion">
+    <p><a href="index.html">Inicio</a></p>
+    <p><a href="Apartados/generos.html">Géneros</a></p>
+    <p><a href="Apartados/noticias.html">Noticias</a></p>
+    <p><a href="Apartados/contacto.html">Contacto</a></p>
+  </nav>
+
+  <!--Contenido de la página-->
+  <main id="seccionprincipal">
+
+    <!--Menú de navegación lateral de géneros-->
+    <nav id="menu">
+      <p><u>Géneros</u></p>
+      <a href="Apartados/generoFantasia.html">Fantasía</a>
+      <a href="">Comedia</a>
+      <a href="">Drama</a>
+      <a href="">Romance</a>
+    </nav>
+
+    <!--Introducción de la página e imagen decorativa-->
+    <section id="introduccion">
+      <h1>Sobre este sitio</h1>
+      <p>Bienvenidos a Ratón de Biblioteca, la mejor página para encontrar reseñas relacionadas con tus libros favoritos. <br>
+         Desde las sagas más conocidas hasta las obras de nicho, si está escrito en papel, está aquí.<br>
+         Puedes comenzar tu búsqueda clicando en la lista de géneros de la izquierda, o clicando géneros
+         en la barra de navegación superior</p>
+    </section> 
+    
+    <aside id="contenedorimagen">
+      <img class="floatintroduccion" src="Multimedia/Literatura_mundial.jpg" alt="Imagen inicio">
+    </aside>
+  </main>
+
+  <!--Pié de página-->
+  <footer>
+    <p>Página web realizada por Miguel Damborenea Terreros con fines educativos || Todos los derechos de las imágenes están reservados y pertenecen a sus autores.</i></p>
+  </footer>
+</body>
+</html>
