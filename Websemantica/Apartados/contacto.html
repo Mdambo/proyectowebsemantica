@@ -1,0 +1,101 @@
+<!--
+
+Nombre:
+Miguel Damborenea Terreros
+   
+Fecha: 
+29/11/2023
+
+Nombre del fichero: 
+contacto.html
+   
+UD: 
+Lenguaje de marcas y sistemas de gestión de la información 02 (DAM)
+   
+Tarea: 
+Tarea Evaluación 02: Sitio Web.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página inicial de página reseñas de libros">
+    <meta name="keywords" content="Inicio, Libros, Reseñas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ratón de Biblioteca</title>
+    <!--Estilos de css-->
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+  
+<body>
+
+  <!--Cabecera de la página, incluidos logos y nombre-->
+  <header>
+    <img class="imagenlogo1" src="../Multimedia/libro.svg" alt="logo libro" >
+    <img class="imagenlogo2" src="../Multimedia/ratonlogo.webp" alt="logo ratón" >
+    <b>Ratón de <br>Biblioteca</b><br><p>El lugar para los amantes de la literatura</p>
+  </header>
+
+  <!--Barra de navegación superior-->
+  <nav id="seccionnavegacion">
+    <p><a href="../index.html">Inicio</a></p>
+    <p><a  href="../Apartados/generos.html">Géneros</a></p>
+    <p><a href="../Apartados/noticias.html">Noticias</a></p>
+    <p><a href="../Apartados/contacto.html">Contacto</a></p>
+  </nav>
+
+  <!--Contenido de la página-->
+  <main id="seccionprincipal">
+
+    <!--Menú de navegación lateral de géneros-->
+    <nav id="menu">
+      <p><u>Géneros</u></p>
+      <a href="generoFantasia.html">Fantasía</a>
+      <a href="">Comedia</a>
+      <a href="">Drama</a>
+      <a href="">Romance</a>
+    </nav>
+
+    <!--Formulario de contacto-->
+    <section class="estiloformulario">
+    <form action="mailto:mdamborenea@birt.eus" method="post">
+        <h4>Nombre:</h4>
+        <input type="text" name="nombre" class="camposformulario"> <br>
+        <h4>Apellidos:</h4>
+        <input type="text" name="apellidos" class="camposformulario"> <br>
+        <h4>Correo electrónico:</h4>
+        <input type="email" name="email" class="camposformulario"> <br>
+        <h4>Asunto:</h4>
+        <select name="motivo" class="camposformulario">
+        <option value="sugerencia">Sugerencias de mejora</option>
+        <option value="colaboración">Colaboración con la página</option>
+        <option value="reclamacion">Reclamaciones</option>
+        </select> <br>
+        <h4>Mensaje:</h4>
+        <textarea name="mensaje" class="camposformulario"></textarea><br><br>
+        <input type="submit" value="enviar" class="botonenviar">
+    </form>
+    </section>
+
+    <!--Panel de redes sociales-->
+    <aside id="redessociales">
+        <h3>Encuentranos en:</h3>
+        <div class="contenedoriconorrss"><img class="iconorrss" src="../Multimedia/Twitter_Logo_Mini.svg" alt="Twitter" ></div>
+        <p>@RatonBiblioteca</p>
+        <div class="contenedoriconorrss"><img class="iconorrss" src="../Multimedia/Facebook.png" alt="Facebook" ></div>
+        <p>Ratón de Biblioteca</p>
+        <div class="contenedoriconorrss"><img class="iconorrss" src="../Multimedia/GitHub.png" alt="GitHub" ></div>
+        <p>RatonBiblioteca</p>
+        <div class="contenedoriconorrss"><img class="iconorrss" src="../Multimedia/instagram.png" alt="Instagram" ></div>
+        <p>@BibliotecaRaton</p>
+      </aside>
+
+  </main>
+  
+  <!--Pié de página-->
+  <footer>
+    <p>Página web realizada por Miguel Damborenea Terreros con fines educativos || Todos los derechos de las imágenes están reservados y pertenecen a sus autores.</i></p>
+  </footer>
+</body>
+</html>
